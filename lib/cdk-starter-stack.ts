@@ -25,6 +25,7 @@ export class VPCStack extends cdk.Stack {
   }
 }
 
+// 👇 extend the props interface of LambdaStack
 interface LambdaStackProps extends cdk.StackProps {
   vpc: ec2.Vpc;
 }
