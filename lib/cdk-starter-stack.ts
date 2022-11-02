@@ -44,7 +44,7 @@ export class LambdaStack extends cdk.Stack {
       // 👇 place lambda in shared VPC
       vpc,
       allowPublicSubnet: true,
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_16_X,
       handler: 'index.main',
       code: lambda.Code.fromAsset(path.join(__dirname, '/../src/my-lambda')),
       environment: {
